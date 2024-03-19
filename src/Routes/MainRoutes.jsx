@@ -1,17 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useNavigate,
-} from 'react-router-dom';
-import LandingPage from '../pages/LandingPage';
+import { Route, Routes } from "react-router-dom";
+import LandingPage from "../pages/LandingPage";
+import ServicesFullPage from "../fullPages/FullServices";
 
 const MainRoutes = () => {
   return (
     <>
       <Routes>
         <Route path={`/`} element={<LandingPage />} />
+        <Route path={`/services`} element={<ServicesFullPage />} />
       </Routes>
     </>
   );
